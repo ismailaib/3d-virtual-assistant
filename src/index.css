@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leva-sizes-rootWidth: 340px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #a8f4fa;
+  background-image: linear-gradient(19deg, #a8dffa 0%, #ddd6f3 100%);
+}
+
+body.greenScreen {
+  background-color: #00ff00;
+  background-image: none;
+}
+
+
+input {
+  width: 100%;
+  height: 2.7rem;
+  border-radius: 4px !important;
+  padding: 0.7rem !important;
+  font-size: 12px !important;
+  outline: none !important;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+
+.btn {
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff4e;
+  color: rgb(84, 84, 84);
+  backdrop-filter: blur(14px);
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.recording {
+  color: rgb(227, 69, 69) !important;
+}
+
+.btn:hover {
+  background-color:rgba(246, 246, 246, 0.489);
+  color: rgb(49, 49, 49);
+}
+
+.chatbar {
+  height: 100%;
+  background: #fdfdfd4e !important;
+  padding: 1rem;
+  margin: 2rem;
+  width: 30%;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+
+}
+
+.chatbar h3 {
+  background: #fdfdfd !important;
+  padding: 1rem;
+  border-radius: 7px;
+  color: #545454;
+  z-index: 999;
+  cursor: pointer;
+}
